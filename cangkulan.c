@@ -9,7 +9,6 @@ AddressPlayer CreateNodePlayer(Name name[]){
 	strcpy((P)->playerName,name);
 	(P)->nextPlayer=NULL;
 	P->MyCard.firstCard=NULL;
-	printf("test");
 	return P;
 }
 void InputData(Name name[]){
