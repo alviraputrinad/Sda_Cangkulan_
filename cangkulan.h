@@ -50,7 +50,7 @@ void ShareCard(); //Membagikan kartu
 void SwapCard(); //Swap untuk modul random
 void RandomizeCard(); //Acak kartu
 void TakeCard(); //Ambil kartu di cangkulan
-void PlayerCardEmpty();
+bool PlayerCardEmpty();
 void InputData(Name name[]);
 void Play(); //sebagai papan permainan
 
