@@ -8,6 +8,8 @@ AddressPlayer CreateNodePlayer(Name name[]){
 	P=(AddressPlayer)malloc(sizeof(PlayerList));	
 	strcpy((P)->playerName,name);
 	(P)->nextPlayer=NULL;
+	P->MyCard.firstCard=NULL;
+	printf("test");
 	return P;
 }
 void InputData(Name name[]){
@@ -103,4 +105,7 @@ void DisplayPlayerCard(FirstPlayer FP){
 		printf("%s",pHelp->Card.typeCard);
 		pHelp=pHelp->nextCard;
 	}
+}
+bool PlayerCardEmpty(AddressPlayer AP){
+	return (AP->MyCard.firstCard->nextCard==NULL);
 }
